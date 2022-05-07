@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!-- this is a comment -->
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +10,10 @@
     <meta name="description" content="describe the page">
     <meta name="keywords" content="html, html tutorial">
     <meta name="robots" content="INDEX, FOLLOW">
+    <!-- noindex, nofollow if you dont want web page to appear on search engines -->
+
     <title> Course Evaluation</title>
+
 
     <style>
         * {
@@ -55,7 +61,7 @@
 
         th.gry {
             text-align: left;
-            background-color: lightgray;
+            background-color: rgb(230, 230, 230);
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
         }
@@ -70,11 +76,34 @@
             background-color: white;
             border: hidden;
         }
+
+        .button {
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgb(230, 230, 230);
+            color: black;
+            border: hidden;
+            height: 30px;
+            width: 100px;
+
+        }
+
+        .button:hover {
+            background-color: lightgray;
+        }
     </style>
 
 </head>
 
+
+
 <body>
+
 
     <h1>Course Evaluation</h1>
 
@@ -285,8 +314,7 @@
 
         </p>
 
-        <p><b>On average, how many hours a week do you spend on this course(including class time)? </b> <br>
-            <br>
+        <p><b>On average, how many hours a week do you spend on this course(including class time)? </b> <br> <br>
             <input type="radio" name="time">0 - 2 <br>
             <input type="radio" name="time">2 - 5 <br>
             <input type="radio" name="time">6 - 10 <br>
@@ -307,8 +335,13 @@
         <p> <b> Is there any other feedback you'd like to give on this class?</b> <br> <br>
             <textarea rows="4" cols="50"> </textarea>
             <br><br>
-            <button> Evaluate Now! </button>
 
-            </form>
+        <p> <b>
+                <button class="button">Submit</button>
+            </b> </p>
+
+
+        </form>
+
 
     </body>
