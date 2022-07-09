@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            height: 70px;
+            width: 100%;
+            background: #000000;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-left: 20px;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+            align-self: left;
+        }
+
+        nav ul {
+            position: absolute;
+            top: 20px;
+            width: 98%;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            color: rgb(205, 199, 199);
+        }
+
+        nav .menu-btn i {
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        @media (max-width: 920px) {
+            nav .menu-btn i {
+                display: block;
+                margin-left: 75vw;
+                margin-right: 5px;
+            }
+
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                background: rgba(17, 17, 17, 0.629);
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+                display: block;
+                transition: all 0.3s ease;
+            }
+
+            #click:checked~ul {
+                left: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                margin: 40px 0;
+            }
+
+            nav ul li a {
+                width: 100%;
+                margin-left: -100%;
+                display: block;
+                font-size: 20px;
+                transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+
+            #click:checked~ul li a {
+                margin-left: 0px;
+            }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                background: none;
+                color: rgb(205, 199, 199);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav .menu-btn i {
+                display: block;
+                margin-left: 65vw;
+            }
+        }
+
+        @media (max-width: 350px) {
+            nav .menu-btn i {
+                display: block;
+                margin-left: 45vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo" id="logo">
+            Logo
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
