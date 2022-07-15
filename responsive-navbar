@@ -77,8 +77,11 @@
         @media (max-width: 920px) {
             nav .menu-btn i {
                 display: block;
-                margin-left: 75vw;
-                margin-right: 5px;
+                margin-right: 50px;
+            }
+
+            .logo {
+                margin-right: auto;
             }
 
             nav ul {
@@ -120,20 +123,6 @@
                 color: rgb(205, 199, 199);
             }
         }
-
-        @media (max-width: 600px) {
-            nav .menu-btn i {
-                display: block;
-                margin-left: 65vw;
-            }
-        }
-
-        @media (max-width: 350px) {
-            nav .menu-btn i {
-                display: block;
-                margin-left: 45vw;
-            }
-        }
     </style>
 </head>
 
@@ -156,4 +145,5 @@
     </nav>
 
 </body>
+
 </html>
