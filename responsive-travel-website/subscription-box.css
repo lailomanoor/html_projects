@@ -1,0 +1,35 @@
+/*newaletter subscription box*/
+.newsletter {
+    margin-top: 70px;
+    background: url("https://images.pexels.com/photos/5696873/pexels-photo-5696873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+}
+
+.form-container {
+    border-radius: 28px;
+    margin: auto;
+}
+
+::placeholder {
+    color: white;
+}
+
+.form-group input {
+    color: white;
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    margin: 10px auto;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-container h1 {
+    text-align: center;
+}
